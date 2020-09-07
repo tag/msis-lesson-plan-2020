@@ -1,11 +1,4 @@
-# Case competition review
-
-* We love you, even if it comes across as harsh
-    - This is a safe place
-* Answer the right question
-    - This was about how to *manage* the project, not how to *do* the project
-* Appendices. Always
-* Accepting feedback
+# Quiz #2; Review Quiz #1
 
 # Common HW issues
 
@@ -13,12 +6,19 @@
 Relative file paths as used in `<link>`, `<img>`, `<a>`, and scripts.
     * Absolute, from root
         - Leading `/`
+        - Leading with a drive letter `C:\`
+    * Absolute, from user directory (Unix, Mac; not Windows)
+      - Leading '~/'
     * Relative
-        - `../` back up a level
+      - No leading slash
+      - `./` go from the current directory
+      - `../` back up a level
     * Common protocol
         - `://`
+          - e.g., `://css/styles.css`
     * Fully qualified
         -`[protocol]://[domain]/[path]/[file]`
+          - e.g., http://localhost:8080/css/styles.css
     * Do NOT use paths specific to your drive
 
 # Three parts to design an application:
@@ -32,27 +32,48 @@ Relative file paths as used in `<link>`, `<img>`, `<a>`, and scripts.
 
 * Separation of Concerns: What is the role of HTML, CSS, Javascript
     - [CSS Zen Garden](http://www.csszengarden.com)
-      . 
+      .
 
 * MVC, and which parts are represented where in our architecture.
 
 
-## DOM: What is it?
+## Internet stack (review)
 
-* div, rows and columns
+5. Application Layer (HTTP)
+4. Transport Layer (TCP -> Port 80/443)
+3. Network Layer (IP)
+2. Data Link Layer (wifi / Ethernet)
+1. Physical Layer
+
+
+
+## HTML Review
+
+* div (block element), span (inline element)
+* `<title>` element required!
 * Use `<section>`?
 
+### Tags you may not have learned about
 
-# Docker
+* `<label>`
+* `<cite>`
+*
+
+### Explain DOM tree, show a tree
+
+* HTML validator: https://validator.w3.org/#validate_by_input
+
+
+# Docker (Review from 02)
 
 https://docs.docker.com/get-started/
 
 image == class
 container == instance
 
-    > When you run docker run `hello-world`, Docker looks for the image locally. 
-    > If the Docker image doesn’t exist, Docker “pulls” the image and then runs 
-    > it. After the image is downloaded, run docker images to see the 
+    > When you run docker run `hello-world`, Docker looks for the image locally.
+    > If the Docker image doesn’t exist, Docker “pulls” the image and then runs
+    > it. After the image is downloaded, run docker images to see the
     > `hello-world` image locally
 
 ```bash
@@ -90,13 +111,13 @@ Publicly viewable pages will go in `app/public`
 ```bash
 \# Won't work, as the image is running
 $ docker rmi <image number>
-  
+
 $ docker ps     # Lists _containers_
 $ docker ps -a  # Even shows the stopped ones
 
 \# removes the container
 $ docker rm <container number>
-  
+
 \# Enters the container
 $ docker exec -it 8a34fd460cec bash
 ```
