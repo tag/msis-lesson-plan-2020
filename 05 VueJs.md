@@ -38,11 +38,12 @@ Hints about getting the file path in Windows (copy/paste from Windows Explorer)
 # Review Data presentation
   "04 Thoughts on data.pptx"
 
-#
+# NoSQL
 
-Also:
-- emails
-- form types
+  * Which is better, and why? (Group breakouts)
+  * Relate back to CAP theorem
+    - https://blog.nahurst.com/visual-guide-to-nosql-systems
+
 
 # Intro to VueJS
 

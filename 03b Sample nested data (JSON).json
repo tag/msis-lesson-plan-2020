@@ -1,0 +1,23 @@
+[
+  {
+    "id": "E901",
+    "className": "D&S, aka Being Awesome",
+    "enrollments": [
+      {
+        "studentName": "Tom"
+        "studentId": "123445798"
+      },
+      {
+        "studentName": "Steve"
+        "studentId": "55555555"
+      }
+    ]
+  },
+  {
+    "id": "X501",
+    "className": "Caffeine Deprevation",
+    "enrollments": [
+      // ...
+    ]
+  },
+]

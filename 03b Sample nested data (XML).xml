@@ -1,0 +1,27 @@
+<!-- Example #1 -->
+<people>
+  <person name="tom" id="123445798">
+    <classes>
+      <class id="X501" name="MSIS"></class>
+      <class id="E901" name="D.S., aka Being Awesome"></class>
+    </classes>
+  </person>
+  <person name="Steve" id="55555555">
+    <!-- ... -->
+  </person>
+</people>
+
+
+
+
+<!-- Example #2 -->
+<classes>
+  <class id="E901" name="D.S., aka Being Awesome">
+    <person name="Steve" id="55555"></person>
+    <person name="Tom" id="123445798"></person>
+  </class>
+  <class id="X501" name="Caffeine Deprevation">
+    <person name="Cindy" id="44444"></person>
+    <person name="Tom" id="123445798"></person>
+  </class>
+</classes>
