@@ -18,6 +18,8 @@
 * Review the `Dockerfile` from the HW
   - Copy `Dockerfile` and `docer-compose.yml` from the HW; explain each step.
   - When being built, every line in the Dockerfile actually creates a new image.
+* Also review Apache config (and copy to our project repo)
+
 
 # Review the readings
 
