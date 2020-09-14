@@ -1,10 +1,9 @@
 # Open time
   - Docker text questions?
 
-# WHY ARE YOU BEHIND?
-
 # Mental Health Check
   - Stages of team development
+    - Forming, Storming, Norming, Performing
   - Using Teams (general channel, private chat)
 
 <!-- # Schema?
@@ -73,7 +72,7 @@ Hints about getting the file path in Windows (copy/paste from Windows Explorer)
     - Try to add the same `{{2+2}}` snip elsewhere on the page. What happens?
     - **TIP:** Don't make the parent of your app `<body>` as Vue changes/refreshes the element's DOM regularly, and using body is not recommended.
 
-  * [SKIP for now] Use a [IIFE function](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression), an "Immediately Invoked Function Expression"
+  // * SKIP for now Use a [IIFE function](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression), an "Immediately Invoked Function Expression"
 
   * Test to see whether the app is active!
 
