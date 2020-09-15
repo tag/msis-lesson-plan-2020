@@ -63,19 +63,6 @@
   </ul>
   ```
 
-## Common events & Vue life cycle
-
-  * Common events include
-    - click
-    - DOMContentLoaded
-    - load
-    - Vue has special handlers for others, expecially keyup events on particular keys
-
-  * The `DOMContentLoaded` and `load` events won't work like you expect in Vue. (They won't be processed until after those events have occurred) Instead, hook into the [Vue lifecycle](https://vuejs.org/v2/api/#Options-Lifecycle-Hooks) and the [lifecycle diagram](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram)
-    - Based on that lifecycle diagram, where would be a good place to asynchronously fetch data?
-    - `beforeCreate` would be a good option ...
-
-
 ## Promise API
 
 Every `fetch()` returns a [`Promise` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
@@ -98,6 +85,17 @@ Both `then()` and `catch()` return promise objects, so these may be chained.
     }
 ```
 
+## Common events & Vue life cycle
+
+  * Common events include
+    - click
+    - DOMContentLoaded
+    - load
+    - Vue has special handlers for others, expecially keyup events on particular keys
+
+  * The `DOMContentLoaded` and `load` events won't work like you expect in Vue. (They won't be processed until after those events have occurred) Instead, hook into the [Vue lifecycle](https://vuejs.org/v2/api/#Options-Lifecycle-Hooks) and the [lifecycle diagram](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram)
+    - Based on that lifecycle diagram, where would be a good place to asynchronously fetch data?
+    - `beforeCreate` would be a good option ...
 
 
 ## Event Handlers
