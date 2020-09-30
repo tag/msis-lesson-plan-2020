@@ -34,6 +34,9 @@ Review events [3 minutes in group, make a list as long as you can]
 
 
 # Two-way data binding with VueJS
+Review Vue's `.prevent` on event handler
+  * Notice how the page is reloading without it?
+Practice by making an "Add New Patient" form
 
 
 # Introduce the group case!
