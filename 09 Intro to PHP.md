@@ -1,3 +1,9 @@
+# Review recent HW
+
+# Architecture review
+(group exercise)
+
+
 # Set up files
 
   ```
@@ -15,19 +21,24 @@
       |- index.html
   ```
 
-  
+
 
 # Test PHP
 
-  - Create a `phpinfo()` page to make sure everything is working. Call it `info.php`.
+- Create a `phpinfo()` page to make sure everything is working. Call it `info.php`.
 
-  ```php
-  <?php
+```php
+<?php
 
-  phpinfo();
-  ```
+phpinfo();
+```
 
 
+# bugs I had to fix
+
+* php.ini comments
+* docker-compose env loading
+* gitignore
 
 # Intro to PHP
 
