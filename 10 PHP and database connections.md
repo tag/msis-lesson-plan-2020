@@ -1,33 +1,44 @@
-# HW Review (Db? Amazon?)
+(This is a good time to do a "What are we learning" discussion)
 
-# PHP
-* Which big companies use PHP?
-* HHVM (Facebook); turned PHP from a scripting language to a compiled language (kinda)
-*
+#Upcoming assignment
+HW #6: Azure cloud
+Group HTML Milestone
 
-# Environment variables
+# Other D&S issues in the news:
+* ~16K COVID cases lost (-> no contact tracing) because "Public Health England" used old version of Excel;
+  data initially in CSV format (which has no upper bound size)
+  https://www.bbc.com/news/uk-54422505
 
-* What are "environment variables"
-  - The most common is PATH
-  ```terminal
-  # TAG: On windows, try just `path`?
-  # Windows
-  echo %Path%
+# Readings
 
-  # Windows, since Windows 10 Insider Build 14971 (Powershell is now the default)
-  $Env:Path
+## APIs (in the news; recap from previous):
+  * this week at the Supreme Court, Oracle v. Google
+      - Google re-implemented the Java API for Android
 
-  # MacOS, Linux, Unix
-  echo $PATH
-  ```
+    pro Oracle coverage: https://www.ipwatchdog.com/2020/08/05/google-v-oracle-perspective-googles-android-cheat-code-copy-oracles-code/id=123789/
+    pro Google coverage: https://www.eff.org/cases/oracle-v-google
 
-* Add `env` to `.gitignore`
+## Evolution of HTTP
+* HTTP2 and SPDY; driven by Google & Chrome, low outside adoption
+* HTTP3, using UDP / QUIC, being defined by IETF
 
+## Cloud reading
 
-# DB Connections
+Main points:
+* Is cloud cheaper?
+* Is cloud more secure?
+* Cloud's main benefits are rapid deployment and scalability
+* Transition to cloud SaaS may come with a loss of ownership
+  - Amazon/Apple video? What about your tax data? Accounting data?
+* How did the cloud come about?
+  - balance between centralized and distributed
 
-* Know these steps!
+## History of Amazon Web services
 
-## SQL Injection
+* To speed and make consistent their internal development
 
-## UTF-8 and character sets.
+?? ## Netflix
+
+# Building POST APIs
+
+* Don't forget date handling
