@@ -1,0 +1,29 @@
+# Review continuous integration
+
+# Review continuous delivery / continuous deployment
+
+
+# Easy form validation
+
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+  * `required`
+  * input types: email, number, url, text
+    - watch out for leading zeros
+  * input, `min` and `max` attributes for numbers,
+  * input `pattern` attribute uses simple regex ()
+
+```
+if (form.checkValidity() === false) {
+```
+
+## CSS:
+  * `:required`, `:valid` and `:invalid` pseudo-classes
+
+  * Bootstrap recipes: https://getbootstrap.com/docs/4.5/components/forms/#validation
+
+# Validate on the server-side too ...
+  (But we're largely skipping that for now)
+  - Can occur at the Data layer AND/OR at the application layer
+  - Which is better (dealer's choice, but handle the errors!)
+
+# NEXT TIME:
