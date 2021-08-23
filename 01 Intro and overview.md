@@ -2,6 +2,9 @@
 # Intro (45 min?)
 
   * TAG (10 min)
+  * What about you, the students? (10 min)
+
+  * Four stages of team development (5 min)
 
   * Where we're going in the course (10 min)
     - Full-stack application
@@ -10,23 +13,48 @@
       . Web services, API-driven
       . n-tier
     - Hands-on
+    - This is a programming course, but it's not about programming
     - Am I training you to be a developer?
       . NO!
-      . This is about _empathizing_ with developers
-      . This is about understanding complexity
+      . It's about _empathizing_ with developers
+      . It's about understanding complexity
+      . It's about the development process
       . This is giving you experience to speak with confidence
-        * Incorrect saying "in my SQL file" when you mean "in the database"
+        * Incorrectly saying "in my SQL file" when you mean "in the database"
 
+  * Syllabus Appendices (10 min)
+    - Showing up late; leaving early
+    - Laptops
+    - Plagiarism, sharing, etc.
+    - Mental health (CAPS)
+    - DSS & religious accommodations
 
   * Course (20 min?)
-    - Assignment breakdown (5/20)
+    - Assignment breakdown (5 min)
       . Academic misconduct
-    - GitHub Classroom (5/20 min)
-    - First assignment (HTML) (5/20 min)
-    - We'll build on it in the future
-    - GitHub (10/20 min)
+    - GitHub Classroom (5 min)
+    - First assignment (HTML) (5 min)
+    - We'll build on it in the future!
+    - GitHub (5 min)
+    - Docker (5 min)
 
-    - NEW (2020) _"Docker for PHP Developers"_ (3 min)
+    - ~~NEW (2020) _"Docker for PHP Developers"_ (3 min)~~
+    - Review "Preparation checklist" and install software (Docker Desktop, VS Code, GitHib Desktop)
+    -
+# In-class project, 2021 (remaining time)
+
+Let's build a job offer data collection system.
+
+* Should it be an app? Costs/benefits?
+* How simple or complex? (MVP?)
+* What will the data look like? (And why?)
+  - Dirty, user generated
+  - Accurate? Timely?
+  - Trade-off between user-entered and admin-entered
+* Who will the users be? (roles)
+
+* What is out development process?
+  - ad-hoc (Necessary, inevitable, but not the best)
 
 # Case competition review (2019)
 
