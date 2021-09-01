@@ -7,7 +7,7 @@
   * Four stages of team development (5 min)
 
   # Some changes
-  
+
   * Where we're going in the course (10 min)
     - Full-stack application
       . Mobile ready (responsive)

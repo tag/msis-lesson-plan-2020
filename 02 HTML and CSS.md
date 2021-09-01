@@ -104,11 +104,9 @@ What we need is a way to **serialize** data. In other words to be able to write 
 
 ### Data model first!
 * This creates design decisions.
-
-
   * Ask groups to make preview sketches
 
-  * Show my preview sketches (5/25)
+  * Show my preview sketches
 
     - Build HTML?
 
