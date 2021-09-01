@@ -6,6 +6,8 @@
 
   * Four stages of team development (5 min)
 
+  # Some changes
+  
   * Where we're going in the course (10 min)
     - Full-stack application
       . Mobile ready (responsive)
@@ -79,18 +81,6 @@ Let's build a job offer data collection system.
       - Describe Document Object Model
       - doctype
       - head, title (required!), body
-
-# Review server architecture
-## Examples of cloud Architecture
-
-  * Client--server
-  * 3-tier, server-driven
-  * 3-tier, client-driven
-
-### Concepts in virtualization
-
-  * Virtual machines
-  * Docker
 
 # Course project (in-class) (30 mins ?)
 

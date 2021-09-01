@@ -1,19 +1,42 @@
+# Course project (in-class) (30 mins ?)
+
+## Three parts of an application:
+
+  1. UI
+  2. Architecture
+  3. Data store
+
+We made some technology decisions early:
+
+  * Mobile, from any computer --> web-app
+  * Some technology decisions (PHP, MySQL) were made because of a standard LAMP stack in the company
+    - (Explain LAMP)
+
+
+# Server architecture
+## Examples of cloud Architecture
+
+  * Client--server
+  * 3-tier, server-side
+  * 3-tier, client-heavy
+  * Microservice
+
+## _Our_ Architecture
+  * See slides
+
+# Concepts in virtualization
+  * Virtual machines
+  * Docker
+
+
 # HTMl & CSS (with some Docker)
-
-*[ ] Quiz #1
-*[ ] Quiz #2 TODAY
-*[ ] Quiz #3 MONDAY
-
 *[ ] Show "D&S Tutorials" Canvas page
 
-## Last time (Review!):
-
-* Server architecture
-* Virtual machines
-
-* Review GitHub group assignment
 
 ## Version Control Systems
+* What is VCS? (Did you do the reading?)
+
+* What is git?
 
 * Key phrases to know re git
   - clone / checkout
@@ -22,8 +45,7 @@
   - pull, pull request
   - branch
 
-
-* Show Git controls in Atom
+* Show Git controls in VSCode
   - Git repositories can be created in two ways:
     - local-to-remote
     - remote-to-local
@@ -37,50 +59,14 @@
   * Use Github desktop to create the remote repo
 
 ### Clone from remote server
-  * (If you don't have commit permissions, ) Fork
+  * (If you don't have commit permissions, Fork)
   * Checkout/clone via GitHub Desktop
   * This is what you (probably) did for the first group project
 
+## Branchs
+  * How and why?
 
-How does it work if someone else pushes to master (if you're in a different branch)?
-
-# Docker
-
-## Terminology
-
-  * **Image** : a static "picture" of a container
-  * **Container** : a running image
-
-```bash
-> docker run [image name]
-> docker run hello-world
-
-# Shows available images
-> docker images
-
-# Shows running containers
-> docker ps
-# Shows all (including stopped) containers; see also Desktop
-> docker ps -a
-```
-
-I _greatly_ prefer using `docker-compose`:
-```bash
-> docker-compose up --build
-# Or, if you want to run it in the background
-> docker-compose up -d --build
-# Now list all the containers running
-> docker-compose ps
-
-```
-
-Getting inside the running container:
-```bash
-docker-compose up -d
-
-docker exec -it [container ID] bash
-
-```
+  * How does it work if someone else pushes to master (if you're in a different branch)?
 
 # Representing data: XML, JSON, CSV
 What we need is a way to **serialize** data. In other words to be able to write it to a bit stream, and read it back in again. If we can serialize data, we can write it to a file or send it over the network.
@@ -151,3 +137,45 @@ What we need is a way to **serialize** data. In other words to be able to write 
       - descendant
       - immediate descendant
       - ::hover, ::link
+
+
+# Docker
+* Virtual machines
+
+* Review GitHub group assignment
+
+## Terminology
+
+  * **Image** : a static "picture" of a container
+  * **Container** : a running image
+
+```bash
+> docker run [image name]
+> docker run hello-world
+
+# Shows available images
+> docker images
+
+# Shows running containers
+> docker ps
+# Shows all (including stopped) containers; see also Desktop
+> docker ps -a
+```
+
+I _greatly_ prefer using `docker-compose`:
+```bash
+> docker-compose up --build
+# Or, if you want to run it in the background
+> docker-compose up -d --build
+# Now list all the containers running
+> docker-compose ps
+
+```
+
+Getting inside the running container:
+```bash
+docker-compose up -d
+
+docker exec -it [container ID] bash
+
+```
