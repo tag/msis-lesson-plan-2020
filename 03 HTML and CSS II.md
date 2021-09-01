@@ -1,4 +1,89 @@
-# Quiz #2; Review Quiz #1
+# Three parts to design an application:
+[Draw this on the board]
+
+  1. UI (Presentation Layer)
+  2. Application logic
+  3. Data store
+
+  We made some technology decisions early:
+
+    * Mobile, from any computer --> web app
+    * Some technology decisions (PHP, MySQL) were made because of a standard LAMP stack in the company
+      - (Explain LAMP)
+
+## Examples of cloud Architecture
+
+  * Client--server
+  * 3-tier, server-side
+  * 3-tier, client-heavy
+  * Microservice
+
+## _Our_ Architecture
+  * See slides
+
+# Concepts in virtualization
+  * Virtual machines
+  * Docker
+
+# HTMl & CSS (with some Docker)
+  *[ ] Show "D&S Tutorials" Canvas page
+
+* Separation of Concerns: What is the role of HTML, CSS, Javascript
+    - [CSS Zen Garden](http://www.csszengarden.com)
+      .
+
+* MVC, and which parts are represented where in our architecture.
+
+
+## Internet stack (review)
+
+5. Application Layer (HTTP)
+4. Transport Layer (TCP -> Port 80/443)
+3. Network Layer (IP)
+2. Data Link Layer (wifi / Ethernet)
+1. Physical Layer
+
+
+# Docker
+* Virtual machines
+
+
+## Terminology
+
+  * **Image** : a static "picture" of a container
+  * **Container** : a running image
+
+```bash
+> docker run [image name]
+> docker run hello-world
+
+# Shows available images
+> docker images
+
+# Shows running containers
+> docker ps
+# Shows all (including stopped) containers; see also Desktop
+> docker ps -a
+```
+
+I _greatly_ prefer using `docker-compose`:
+```bash
+> docker-compose up --build
+# Or, if you want to run it in the background
+> docker-compose up -d --build
+# Now list all the containers running
+> docker-compose ps
+
+```
+
+Getting inside the running container:
+```bash
+docker-compose up -d
+
+docker exec -it [container ID] bash
+
+```
+
 
 # Common HW issues
 
@@ -21,29 +106,6 @@ Relative file paths as used in `<link>`, `<img>`, `<a>`, and scripts.
           - e.g., http://localhost:8080/css/styles.css
     * Do NOT use paths specific to your drive
 
-# Three parts to design an application:
-[Draw this on the board]
-
-  1. UI (Presentation Layer)
-  2. Application logic
-  3. Data store
-
-## The architecture of our system
-
-* Separation of Concerns: What is the role of HTML, CSS, Javascript
-    - [CSS Zen Garden](http://www.csszengarden.com)
-      .
-
-* MVC, and which parts are represented where in our architecture.
-
-
-## Internet stack (review)
-
-5. Application Layer (HTTP)
-4. Transport Layer (TCP -> Port 80/443)
-3. Network Layer (IP)
-2. Data Link Layer (wifi / Ethernet)
-1. Physical Layer
 
 
 
