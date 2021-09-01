@@ -45,8 +45,11 @@
 
 
 # Docker
-* Virtual machines
 
+  * How is Docker similar to/different from a virtual machine?
+
+## See example files in class git repo
+  * Also, how to "Open terminal window here"
 
 ## Terminology
 
