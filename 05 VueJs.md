@@ -14,6 +14,36 @@
 
   * For now, access the JSON stubs available via Canvas modules page -->
 
+# History of Vue, ... Vue3
+
+## Vue3
+
+From https://stackoverflow.com/questions/66625010/how-to-fetch-data-in-vue-3
+
+```
+<div id="beer">
+  {{ message }}
+</div>
+
+const Breweries = {
+    data() {
+        return {
+            message: ""
+        }
+    },
+    mounted() {
+        fetch('https://api.openbrewerydb.org/breweries/', {
+            headers: { 'Content-type': 'application/json' },
+        }).then(res=>res.json()).then((response) => {
+            this.message = response;
+        }).catch( (error) => {
+            this.message = error;
+        });
+    }
+}
+Vue.createApp(Breweries).mount('#beer')
+```
+
 # HW review
 
   - JSON schemas?
@@ -52,6 +82,7 @@ Hints about getting the file path in Windows (copy/paste from Windows Explorer)
 
     ```html
     <!-- development version, includes helpful console warnings -->
+    <!-- WARNING: Vue.js v2; in 2021 we use Vue3 -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     ```
 
@@ -84,6 +115,17 @@ Hints about getting the file path in Windows (copy/paste from Windows Explorer)
   * https://github.com/tag/msis-triage-2020/blob/master/app/public/dummy/pt-one.php
 
 ## Dates suck
+
+###
+
+### Old Stuff (for historical interst)
+_This section is retained, but we won't be using moment.js in 2021._ It's been retired, and is no longer recommended for new projects.
+
+#### Alternatives to moment.js
+
+* https://day.js.org/docs/en/parse/string
+
+#### Previous content:
 
 Let's use moments.js to make dates suck less.
 
