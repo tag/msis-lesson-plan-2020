@@ -1,18 +1,13 @@
-2020: Why are we using Docker?
-  - **Replicate the server environment**
-  - Ease of deploying to the cloud
-  - To not have to install software on our mach
-  - This way, we can run different versions of things simultaneously.
 
-  - Review: What is a container?
-    https://www.docker.com/resources/what-container
+# Mental Health Check
+  - Stages of team development
+    - Forming, Storming, Norming, Performing
+  - Using Teams (general channel, private chat)
 
-
-
-# !!! QUIZ !!!
 
 # HW Review:
 
+* Bootstrap 5
 * 404 on favicon.ico
   - Go get a new favicon? (Search free favicons)
 * Review the `Dockerfile` from the HW
@@ -21,7 +16,12 @@
 * Also review Apache config (and copy to our project repo)
 
 
-# Review the readings
+# Review readings
+
+## StackOverflow DEveloper Survey
+https://insights.stackoverflow.com/survey/2019#technology
+
+Vue? JS? Python? Docker?
 
 ## Hierarchical databases
 
@@ -75,14 +75,34 @@ A `Promise` has three states:
 Both `then()` and `catch()` return promise objects, so these may be chained.
 
 ```js
-  created () {
-    fetch("https://raw.githubusercontent.com/tag/msis-triage-2020/master/app/public/dummy/pt-list.php")
-      .then( response => response.json() )
-      .then( json => {
-        //this.project = json;
-        console.log(json)}
-      );
+async mounted() {
+
+        //Method 1:
+        fetch('https://randomuser.me/api/', {
+            // headers: { 'Content-type': 'application/json' },
+        })
+        .then(response => response.json())
+        .then((responseJson) => {
+            console.log(responseJson);
+            this.result = responseJson.results[0];
+            this.message = this.result.name;
+        })
+        .catch( (error) => {
+            this.message = error;
+            console.error(error);
+        });
+
+
+        //Method 2:
+        // const response = await fetch("https://randomuser.me/api/");
+        // const responseJson = await response.json();
+
+        // console.log("Two:", responseJson);
+        // this.message = responseJson.results[0].name;
+        // this.result = responseJson.results[0];
+
     }
+
 ```
 
 ## Common events & Vue life cycle
